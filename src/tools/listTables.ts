@@ -18,9 +18,9 @@ type ListTablesParams = z.infer<typeof listTablesSchema>;
 
 export function registerListTablesTool(server: McpServer): void {
   server.registerTool(
-    'list_tables',
+    'dm8_list_tables',
     {
-      title: '列出数据库中的所有表',
+      title: '列出 DM8 数据库中的所有表',
       description: '返回指定 Schema 下的所有表名',
       inputSchema: listTablesInputSchema,
     },

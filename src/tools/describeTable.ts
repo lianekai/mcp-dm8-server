@@ -19,9 +19,9 @@ type DescribeTableParams = z.infer<typeof describeTableSchema>;
 
 export function registerDescribeTableTool(server: McpServer): void {
   server.registerTool(
-    'describe_table',
+    'dm8_describe_table',
     {
-      title: '显示表结构',
+      title: '显示 DM8 表结构',
       description: '返回列名、类型、长度以及是否可空信息',
       inputSchema: describeTableInputSchema,
     },

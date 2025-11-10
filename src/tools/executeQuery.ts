@@ -19,9 +19,9 @@ type ExecuteQueryParams = z.infer<typeof executeQuerySchema>;
 
 export function registerExecuteQueryTool(server: McpServer): void {
   server.registerTool(
-    'execute_query',
+    'dm8_execute_query',
     {
-      title: '执行只读 SQL',
+      title: '执行 DM8 只读 SQL',
       description: '仅允许 SELECT/SHOW/DESCRIBE/EXPLAIN 语句',
       inputSchema: executeQueryInputSchema,
     },
